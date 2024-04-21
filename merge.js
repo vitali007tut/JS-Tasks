@@ -1,6 +1,6 @@
 /**
  * 56. Merge Intervals
- * 
+ *
  * @param {number[][]} intervals
  * @return {number[][]}
  */
@@ -14,10 +14,7 @@ const merge = (intervals) => {
     let element = intervals[index];
 
     if (array.at(-1)[1] >= element[0]) {
-      const temp = [
-        Math.min(array.at(-1)[0], element[0]),
-        Math.max(array.at(-1)[1], element[1]),
-      ];
+      const temp = [array.at(-1)[0], Math.max(array.at(-1)[1], element[1])];
       array.pop();
       array.push(temp);
     } else {
