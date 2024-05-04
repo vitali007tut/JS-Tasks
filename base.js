@@ -10,3 +10,8 @@ console.log(typeof double);
 //! FD всплывает выше var
 // function
 // number
+
+console.log('\n***************\n');
+// что по итогу в терминале
+console.log([1, 2, 3].map(console.log));
+// ??
